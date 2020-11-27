@@ -1,0 +1,33 @@
+.tasks {
+  position: relative;
+  display: inline-table;
+  background: #e0e0e0;
+  padding: 10px;
+  border-radius: 5px;
+  width: 280px;
+  margin: 10px;
+  word-break: break-all;
+  .title {
+    margin-top: 0px;
+    margin-bottom: 15px;
+  }
+  i.remove-list {
+    position: absolute;
+    right: -4px;
+    top: -6px;
+    height: 25px;
+    width: 25px;
+    text-align: center;
+    border-radius: 50px;
+    line-height: 25px;
+    color: transparent;
+    cursor: pointer;
+  }
+  &:hover {
+    i.remove-list {
+      background: white;
+      border: 1px solid #e0e0e0;
+      color: red;
+    }
+  }
+}

@@ -1,0 +1,26 @@
+.task {
+  position: relative;
+  padding: 5px;
+  background: white;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  &:hover {
+    background: whitesmoke;
+    i {
+      color: red;
+    }
+  }
+  &.isDragging {
+    border: 1px solid gray;
+  }
+  i {
+    position: absolute;
+    right: 0px;
+    color: transparent;
+    cursor: pointer;
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+    padding: 5px;
+  }
+}

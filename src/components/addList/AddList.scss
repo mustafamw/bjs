@@ -1,0 +1,42 @@
+.add-task {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  input {
+    font-family: inherit;
+    border: none;
+    padding: 5px;
+    margin-bottom: 5px;
+    width: calc(100% - 10px);
+    font-size: 15px;
+  }
+  .button-container {
+    display: flex;
+  }
+  button {
+    &:first-child {
+      flex: 0 0 87%;
+    }
+    background: #2a79de;
+    color: white;
+    border: none;
+    width: 100%;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 10px;
+    cursor: pointer;
+    &:hover {
+      background: #486994;
+    }
+    i {
+      float: left;
+    }
+  }
+  .close {
+    background: none;
+    color: rgb(106, 106, 106);
+    &:hover {
+      background: none;
+    }
+  }
+}
