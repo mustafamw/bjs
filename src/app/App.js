@@ -16,10 +16,10 @@ class App extends React.Component {
     }
     const sourceData = tasks[source.droppableId].items[source.index];
     removeTaskItem(source.droppableId, source.index);
-    if(source.droppableId != destination.droppableId) {
+    if(source.droppableId !== destination.droppableId) {
       appendTaskItem(destination.droppableId, destination.index, sourceData)
     }
-    if(source.droppableId == destination.droppableId) {
+    if(source.droppableId === destination.droppableId) {
       appendTaskItem(source.droppableId, destination.index, sourceData)
     }
   }
